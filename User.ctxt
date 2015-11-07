@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=x\ z\ angle\ colorID
+comment0.target=User(int,\ int,\ double,\ int)
+comment1.params=newX
+comment1.target=void\ setX(int)
+comment2.params=newZ
+comment2.target=void\ setZ(int)
+comment3.params=newAngle
+comment3.target=void\ setAngle(double)
+comment4.params=
+comment4.target=int\ getX()
+comment5.params=
+comment5.target=int\ getZ()
+comment6.params=
+comment6.target=double\ getAngle()
+comment7.params=
+comment7.target=int\ getColorID()
+numComments=8
