@@ -10,7 +10,7 @@ public class TronMultiServerThread extends Thread {
         super("TronMultiServerThread");
         this.socket = socket;
         this.tp = tp;
-        this.u = new User(0, 0, 0, 0);
+        this.u = new User(0, 0, 0, (int)(Math.random() * 10));
         tp.addUser(u);
     }
 
@@ -29,7 +29,7 @@ public class TronMultiServerThread extends Thread {
                 outputLine = tp.processInput(inputLine, u);
                 out.println(outputLine);
             }
-            //socket.close();
+            socket.close();
         } catch (Exception e) {
             //e.printStackTrace();
             tp.removeUser(u);
