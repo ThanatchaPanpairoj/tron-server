@@ -23,10 +23,10 @@ public class TronProtocol {
                 u.setAngle(Integer.parseInt(input.substring(comma2 + 1)));
             }
         }
-        String output = users.size() + "a" + u.getColorID();
+        String output = users.size() + "a" + u.getColorID() + u.getX() + "a" + u.getZ() + "a" + u.getAngle() + "a";
         for(User user : users) {
             if(user != u)
-                output += user.getColorID() + "" + user.getX() + "a" + user.getZ() + "a" + (user.getAngle()) + "a";
+                output += user.getColorID() + "" + user.getX() + "a" + user.getZ() + "a" + user.getAngle() + "a";
         }
         System.out.println(output);
         return output; 
